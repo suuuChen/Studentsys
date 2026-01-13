@@ -545,6 +545,11 @@ bool MainWindow::validateBatchInputLine(const QStringList &data, QString &errorM
         errorMsg = "数据不完整，至少需要4个字段";
         return false;
     }
+    // 验证姓名不能为空
+    if (data[0].trimmed().isEmpty()) {
+        errorMsg = "姓名不能为空";
+        return false;
+    }
 
     // 验证班级
     static QStringList validClasses = {"一班", "二班"};
