@@ -892,13 +892,7 @@ void MainWindow::onStatsReady(const GradeStatistics &stats) {
 
     ui->statusbar->showMessage(message, 5000);
 
-    // 可选：弹出详细统计对话框
-    /*
-    QMessageBox msgBox;
-    msgBox.setWindowTitle("统计结果");
-    msgBox.setText(message);
-    msgBox.exec();
-    */
+
 }
 
 void MainWindow::on_leSearchName_textChanged(const QString &arg1) {
